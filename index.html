@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="control unselectable">
+        <h2>Randomize from &nbsp;&nbsp;</h2>
+        <div>
+            <input type="number" id="from" value="" oninput="checkLength()" class="input">
+        </div>
+        <h2>&nbsp;&nbsp; to &nbsp;&nbsp;</h2>
+        <div>
+            <input type="number" id="to" value="" oninput="checkLength2()" class="input">
+        </div>
+        <button onclick="randomize();">Go</button>
+        <button id="reset" onclick="reset();">Reset</button>
+    </div>
+    <div class="return">
+        <h1 id="number">0</h1>
+    </div>
+</body>
+</html>

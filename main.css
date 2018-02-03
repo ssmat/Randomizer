@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+body {
+    background: #f1c40f;
+    font-family: 'Open Sans', sans-serif !important;
+    margin:0px;
+    overflow: hidden;
+    color:#f39c12;
+}
+div.control {
+    width:100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+div.return {
+    width:100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+button {
+    margin-left:30px;
+    height: 30px;
+    padding: 0px 20px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background: #f39c12;
+    color:#f1c40f;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size:1em;
+}
+
+input {
+    height: 30px;
+    padding: 0px 10px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background: #fff;
+    opacity: .5;
+    color:#f39c12;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size:1em;
+}
+
+h1#number {
+    position: relative;
+    font-size: 40vh !important;
+}
+
+/* Color */
+button.ten {transition:.3s ease;color: #f1c40f;background: #f39c12;}
+button.hundred {transition:.3s ease;color: #9b59b6;background: #8e44ad;}
+button.thousand {transition:.3s ease;color: #3498db;background: #2980b9;}
+button.million {transition:.3s ease;color: #2ecc71;background: #27ae60;}
+
+.input-ten {transition:.3s ease;color: #f1c40f;}
+.input-hundred {transition:.3s ease;color: #9b59b6;}
+.input-thousand {transition:.3s ease;color: #3498db;}
+.input-million {transition:.3s ease;color: #2ecc71;}
+
+.ten {transition:.3s ease;transition:1s;background: #f1c40f;color: #f39c12;}
+.hundred {transition:.3s ease;background: #9b59b6;color: #8e44ad;}
+.thousand {transition:.3s ease;background: #3498db;color: #2980b9;}
+.million {transition:.3s ease;background: #2ecc71;color: #27ae60;}
+
+@media only screen and (max-device-width: 480px) {
+    div.control {
+        width:100%;
+        height: 50vh;
+        display: block;
+        text-align: center;
+        z-index: 1;
+    }
+    button {margin:30px 0px 0px 0px;}
+    input, button {width:90%;}
+    div.return {
+        width:100vw;
+        height: 50vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center !important;
+    }
+    h1#number {
+    position: relative;
+    font-size: 80px !important;
+}
+}
