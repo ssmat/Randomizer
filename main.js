@@ -13,15 +13,6 @@ function checkLength() {
         str = str.substring(0, str.length - 1);
         document.getElementById('from').value = str;
     }
-    var toLength = document.getElementById('to').value.length;
-    if (toLength <= 7) {
-        return true;
-    }
-    else {
-        var str = document.getElementById('to').value;
-        str = str.substring(0, str.length - 1);
-        document.getElementById('to').value = str;
-    }
 }
 function checkLength2() {
     var toLength = document.getElementById('to').value.length;
